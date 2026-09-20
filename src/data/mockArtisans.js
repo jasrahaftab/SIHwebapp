@@ -1,0 +1,32 @@
+export const mockArtisans = [
+    {
+        id: "a1",
+        name: "Sunita Devi",
+        village: "Bhagalpur",
+        state: "Bihar",
+        craft: "Handloom weaving",
+        photo: "https://placehold.co/300x300?text=Sunita",
+        story_en: "Sunita has been weaving on a handloom for 20 years, a skill passed down from her mother.",
+        story_hi: "सुनीता 20 वर्षों से हथकरघे पर बुनाई कर रही हैं, यह हुनर उन्हें अपनी माँ से मिला।",
+    },
+    {
+        id: "a2",
+        name: "Ramesh Kumar",
+        village: "Khurja",
+        state: "Uttar Pradesh",
+        craft: "Pottery",
+        photo: "https://placehold.co/300x300?text=Ramesh",
+        story_en: "Ramesh shapes clay on a traditional wheel, following techniques from his family's pottery workshop.",
+        story_hi: "रमेश अपने परिवार की कार्यशाला की पारंपरिक तकनीकों से चाक पर मिट्टी को आकार देते हैं।",
+    },
+    {
+        id: "a3",
+        name: "Lakshmi Bora",
+        village: "Jorhat",
+        state: "Assam",
+        craft: "Bamboo craft",
+        photo: "https://placehold.co/300x300?text=Lakshmi",
+        story_en: "Lakshmi leads a women's group that weaves baskets and home items from local bamboo.",
+        story_hi: "लक्ष्मी एक महिला समूह का नेतृत्व करती हैं जो स्थानीय बाँस से टोकरियाँ और घरेलू सामान बनाता है।",
+    },
+]

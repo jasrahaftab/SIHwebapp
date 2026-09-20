@@ -1,0 +1,36 @@
+.artisan-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.artisan-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.artisan-craft {
+    color: var(--terracotta);
+    font-weight: 600;
+}
+
+.artisan-place {
+    color: var(--muted);
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .artisan-header {
+        flex-direction: row;
+        text-align: left;
+    }
+}

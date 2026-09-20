@@ -1,0 +1,67 @@
+.page-title {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+}
+
+.page-search {
+    width: 100%;
+    padding: 10px 16px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+}
+
+.page-search:focus {
+    border-color: var(--terracotta);
+}
+
+/* Phones: 2 columns */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+/* Tablets: 3 columns */
+@media (min-width: 768px) {
+    .page-search {
+        width: 320px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+}
+
+/* Desktops: 4 columns */
+@media (min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+.chip-row {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.chip {
+    flex-shrink: 0;
+    padding: 6px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--white);
+    font-size: 0.9rem;
+}
+
+.chip-active {
+    background: var(--terracotta);
+    border-color: var(--terracotta);
+    color: var(--white);
+}

@@ -1,0 +1,150 @@
+.hero {
+    background: linear-gradient(135deg, var(--terracotta), var(--indigo));
+    color: var(--white);
+    border-radius: var(--radius);
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero-search {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.hero-search input {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 999px;
+    outline: none;
+}
+
+.hero-search .btn {
+    background: var(--white);
+    color: var(--terracotta);
+}
+
+.category-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.category-chip {
+    padding: 8px 18px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+}
+
+.category-chip:hover {
+    border-color: var(--terracotta);
+    color: var(--terracotta);
+}
+
+.center-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.artisan-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.artisan-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px;
+    text-align: center;
+}
+
+.artisan-card img {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 10px;
+}
+
+.artisan-card h3 {
+    font-size: 1.1rem;
+}
+
+.artisan-card p {
+    color: var(--terracotta);
+    font-weight: 600;
+}
+
+.artisan-card span {
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: var(--shadow);
+}
+
+.step span {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--terracotta);
+    color: var(--white);
+    font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 64px 40px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-search {
+        flex-direction: row;
+    }
+
+    .hero-search input {
+        flex: 1;
+    }
+
+    .artisan-grid,
+    .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
